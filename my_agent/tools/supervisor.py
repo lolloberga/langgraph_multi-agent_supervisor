@@ -1,9 +1,9 @@
 from langchain_core.output_parsers.openai_functions import JsonOutputFunctionsParser
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
-from langchain_openai import AzureChatOpenAI
+from langchain_openai import AzureChatOpenAI, ChatOpenAI
 
 
-def get_supervisor_node(llm: AzureChatOpenAI):
+def get_supervisor_node(llm: ChatOpenAI):
     members = ["Random_Number_Generator", "Coder"]
     system_prompt = (
         "You are a supervisor tasked with managing a conversation between the"

@@ -1,11 +1,11 @@
 from langchain.agents import create_openai_tools_agent, AgentExecutor
 from langchain_core.messages import HumanMessage
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
-from langchain_openai import AzureChatOpenAI
+from langchain_openai import AzureChatOpenAI, ChatOpenAI
 
 
 # function that returns AgentExecutor with given tool and prompt
-def create_agent(llm: AzureChatOpenAI, tools: list, system_prompt: str):
+def create_agent(llm: ChatOpenAI, tools: list, system_prompt: str):
     prompt = ChatPromptTemplate.from_messages(
         [
             (
