@@ -1,0 +1,8 @@
+langchain-core
+langchain-community
+langchain-openai
+langchain-experimental
+langgraph
+langsmith
+python-dotenv
+pydantic-settings

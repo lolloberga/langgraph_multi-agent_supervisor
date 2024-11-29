@@ -12,6 +12,10 @@ class Settings(BaseSettings):
     OPENAI_API_KEY: Optional[str] = None
     STREAMING_MODEL: str = "false"
 
+    LANGCHAIN_TRACING_V2: Optional[str] = "false"
+    LANGCHAIN_PROJECT: Optional[str] = None
+    LANGCHAIN_API_KEY: Optional[str] = None
+
     class Config:
         env_file = ".env"
 
