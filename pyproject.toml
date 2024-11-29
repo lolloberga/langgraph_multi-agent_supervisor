@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "langgraph-multi-agent-supervisor"
+version = "0.1.0"
+description = ""
+authors = ["Lorenzo Bergadano <lorenzobergadano@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+langchain-openai = "^0.2.10"
+langchain-core = "^0.3.21"
+langgraph = "^0.2.53"
+langchain-community = "^0.3.8"
+langsmith = "^0.1.146"
+pydantic-settings = "^2.6.1"
+langchain-experimental = "^0.3.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
